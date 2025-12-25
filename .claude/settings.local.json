@@ -1,0 +1,6 @@
+{
+  "enableAllProjectMcpServers": true,
+  "disabledMcpjsonServers": [
+    "tdx-api-time-mcp"
+  ]
+}

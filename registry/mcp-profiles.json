@@ -1,0 +1,34 @@
+{
+  "profiles": {
+    "tickets": {
+      "name": "tickets",
+      "description": "TeamDynamix ticket management",
+      "servers": ["tdx-tickets-mcp"]
+    },
+    "project": {
+      "name": "project",
+      "description": "TeamDynamix project management",
+      "servers": ["tdx-projects-mcp"]
+    },
+    "time": {
+      "name": "time",
+      "description": "TeamDynamix time tracking",
+      "servers": ["tdx-api-time-mcp"]
+    },
+    "web": {
+      "name": "web",
+      "description": "Browser automation",
+      "servers": ["web-agent-mcp"]
+    },
+    "tdx": {
+      "name": "tdx",
+      "description": "TeamDynamix tickets and projects",
+      "servers": ["tdx-tickets-mcp", "tdx-projects-mcp"]
+    },
+    "full": {
+      "name": "full",
+      "description": "All core MCP servers",
+      "servers": ["tdx-tickets-mcp", "tdx-projects-mcp", "web-agent-mcp"]
+    }
+  }
+}

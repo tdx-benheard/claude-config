@@ -1,0 +1,67 @@
+{
+  "servers": {
+    "tdx-tickets-mcp": {
+      "name": "tdx-tickets-mcp",
+      "description": "TeamDynamix Tickets API",
+      "tags": ["teamdynamix", "api", "tickets"],
+      "config": {
+        "type": "stdio",
+        "command": "node",
+        "args": ["C:/source/mcp/tdx-tickets-mcp/dist/index.js"],
+        "env": {
+          "TDX_PROD_CREDENTIALS_FILE": "C:\\Users\\ben.heard\\.config\\tdx-mcp\\prod-credentials.json",
+          "TDX_DEV_CREDENTIALS_FILE": "C:\\Users\\ben.heard\\.config\\tdx-mcp\\dev-credentials.json",
+          "TDX_CANARY_CREDENTIALS_FILE": "C:\\Users\\ben.heard\\.config\\tdx-mcp\\canary-credentials.json",
+          "TDX_DEFAULT_ENVIRONMENT": "prod"
+        }
+      },
+      "tools": ["tdx_get_ticket", "tdx_search_tickets", "tdx_update_ticket", "tdx_run_report"]
+    },
+    "tdx-api-time-mcp": {
+      "name": "tdx-api-time-mcp",
+      "description": "TeamDynamix Time API",
+      "tags": ["teamdynamix", "api", "time"],
+      "config": {
+        "type": "stdio",
+        "command": "node",
+        "args": ["C:/source/mcp/tdx-api-time-mcp/dist/index.js"],
+        "env": {
+          "TDX_PROD_CREDENTIALS_FILE": "C:\\Users\\ben.heard\\.config\\tdx-mcp\\prod-credentials.json",
+          "TDX_DEV_CREDENTIALS_FILE": "C:\\Users\\ben.heard\\.config\\tdx-mcp\\dev-credentials.json",
+          "TDX_CANARY_CREDENTIALS_FILE": "C:\\Users\\ben.heard\\.config\\tdx-mcp\\canary-credentials.json",
+          "TDX_DEFAULT_ENVIRONMENT": "prod"
+        }
+      },
+      "tools": ["tdx_get_time_report", "tdx_search_time_entries", "tdx_update_time_entry"]
+    },
+    "tdx-projects-mcp": {
+      "name": "tdx-projects-mcp",
+      "description": "TeamDynamix Projects & Issues API",
+      "tags": ["teamdynamix", "api", "projects"],
+      "config": {
+        "type": "stdio",
+        "command": "node",
+        "args": ["C:/source/MCP/tdx-projects-mcp/dist/index.js"],
+        "env": {
+          "TDX_PROD_CREDENTIALS_FILE": "C:\\Users\\ben.heard\\.config\\tdx-mcp\\prod-credentials.json",
+          "TDX_TEST_CREDENTIALS_FILE": "C:\\Users\\ben.heard\\.config\\tdx-mcp\\test-credentials.json",
+          "TDX_CANARY_CREDENTIALS_FILE": "C:\\Users\\ben.heard\\.config\\tdx-mcp\\canary-credentials.json",
+          "TDX_DEV_CREDENTIALS_FILE": "C:\\Users\\ben.heard\\.config\\tdx-mcp\\dev-credentials.json",
+          "TDX_DEFAULT_ENVIRONMENT": "prod"
+        }
+      },
+      "tools": ["tdx_get_project", "tdx_search_projects", "tdx_get_issue", "tdx_search_issues"]
+    },
+    "web-agent-mcp": {
+      "name": "web-agent-mcp",
+      "description": "Browser automation with Playwright",
+      "tags": ["web", "automation", "browser"],
+      "config": {
+        "type": "stdio",
+        "command": "node",
+        "args": ["C:/source/mcp/web-agent-mcp/dist/index.js"]
+      },
+      "tools": ["navigate", "click", "type", "screenshot", "query_page", "scroll"]
+    }
+  }
+}
