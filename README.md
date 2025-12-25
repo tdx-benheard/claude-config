@@ -18,13 +18,14 @@ Profile-based MCP server configuration manager for Claude Code.
 ## Installation
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/tdx-benheard/claude-config.git
 cd claude-config
 npm install
 npm run build
 
 # Add to PATH (Windows)
-# The bin directory is already in your PATH if you followed setup
+# Run the update-path.ps1 script to add the bin directory to your PATH
+powershell -ExecutionPolicy Bypass -File update-path.ps1
 ```
 
 ## Usage
